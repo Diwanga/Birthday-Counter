@@ -2,6 +2,7 @@ const dayEl = document.getElementById("days");
 const houEl = document.getElementById("hours");
 const minEl = document.getElementById("minutes");
 const secEl = document.getElementById("seconds");
+const headEl = document.getElementById("head");
 
 const gettime = () => {
     var bithday = new Date("31 jan 2021");
@@ -19,11 +20,21 @@ const gettime = () => {
 
     console.log(formattime(seconds));
 
+
+}
+const changecol = () => {
+    var r = Math.floor(Math.random() * 255);
+    var g = Math.floor(Math.random() * 255);
+    var b = Math.floor(Math.random() * 255);
+    var col = "rgb(" + r + "," + g + "," + b + ")";
+    headEl.style.color = col;
 }
 
 const formattime = (val) => {
     return val < 10 ? (`0${val}`) : val;
 }
-gettime();
-setInterval(gettime, 1000)
+
+
+setInterval(gettime, 1000);
+setInterval(changecol, 110);
 

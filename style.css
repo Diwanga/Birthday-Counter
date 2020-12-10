@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
 *{
     box-sizing: border-box;
   
@@ -30,8 +30,11 @@ body{
     
 }
 .title{
-    font-size : 3rem;
+    
     margin-top: -8rem;
+    font-family: 'Ewert', cursive;
+    font-size: 3rem;
+    
 
 }
 .big-text {
@@ -43,10 +46,13 @@ body{
 }
 .countdown-el{
     text-align: center;
-    background-color: rgba(0, 204, 255, 0.349);
+    background-color: rgba(0, 204, 255, 0.449);
     width: 8rem;
     padding: 0.8rem;
     margin:  0.3rem;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 8px; /* 5px rounded corners */
     
 }
 .countdown-el:hover{
@@ -58,5 +64,22 @@ body{
 .countdown-el span{
     margin: 0;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+   .title{
+       font-size: 2rem;
+       color: rgb(229, 255, 0);
+   } 
+}
+@media only screen and (min-width: 1000px) {
+
+    .title{
+        font-size: 4rem;
+        color: rgb(229, 255, 0);
+    } 
+ }
+
 
 
