@@ -4,6 +4,8 @@ const minEl = document.getElementById("minutes");
 const secEl = document.getElementById("seconds");
 const headEl = document.getElementById("head");
 
+
+
 const gettime = () => {
     var bithday = new Date("31 jan 2021");
     var currentdate = new Date();
@@ -29,6 +31,8 @@ const changecol = () => {
     var col = "rgb(" + r + "," + g + "," + b + ")";
     headEl.style.color = col;
 }
+
+
 
 const formattime = (val) => {
     return val < 10 ? (`0${val}`) : val;
