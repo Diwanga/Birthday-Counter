@@ -7,7 +7,7 @@ const headEl = document.getElementById("head");
 
 
 const gettime = () => {
-    var bithday = new Date("31 jan 2021");
+    var bithday = new Date("31 jan 2022");
     var currentdate = new Date();
     var totalseconds = (bithday - currentdate) / 1000;
     var days = Math.floor(totalseconds / 3600 / 24);
